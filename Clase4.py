@@ -32,13 +32,13 @@ class Hijo(Madre, Padre):
     
     def __init__(self, nombre, apellido, edad):
         
-        super().__init__(nombre, apellido, edad)
-        
-        self.nombre = nombre
-        self.apellido = apellido
-        self.edad = edad
+        super().__init__(nombre)
+        # self.nombre = nombre
+        # self.apellido = apellido
+        # self.edad = edad
               
     def hablar(self):
         return "Hola, soy {self.nombre}{self.apellido} y tengo {self.edad} años"
     
-hijo = Hijo("Oki", "Reynoso", 24) 
+h = Hijo("ad", "", 12)
+print(h.nombre)
